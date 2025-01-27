@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Información sobre el documento -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para hacer la página responsive -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Compatibilidad con navegadores antiguos -->
+    <title>Sistema de Registro de Juegos</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    
+    <!-- Puedes agregar hojas de estilo aquí -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- O agregar scripts dentro del head si es necesario -->
+    <script src="script.js" defer></script> <!-- 'defer' asegura que el script se ejecute después de cargar el HTML -->
+</head>
+
+<body>
+    <!-- Contenido visible de la página -->
+    <header>
+        <!-- Puedes poner aquí un logo, un menú de navegación, etc. -->
+        <h1>Bienvenido a mi página web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- El contenido principal de la página va aquí -->
+        <section id="inicio">
+            <h2>Sección de inicio</h2>
+            <p>Este es el contenido principal de la página.</p>
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de mí</h2>
+            <p>Aquí va una breve descripción sobre ti o sobre tu página.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="enviar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página con información adicional -->
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
